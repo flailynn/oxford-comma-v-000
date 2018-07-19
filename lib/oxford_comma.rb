@@ -3,5 +3,8 @@ def oxford_comma(array)
     array.join(" and ")
   else
     #some code
+    last_element = array.pop
+    string = array.join(", ")
+    string = string + "and #{last_element}"
   end
 end
